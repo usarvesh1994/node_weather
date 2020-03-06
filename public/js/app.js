@@ -1,4 +1,4 @@
- fetch('http://localhost:3000/weather?search=boston').then((Request) => {
+ fetch('/weather?search=boston').then((Request) => {
      Request.json().then((data) => {
          if (data.error) {
              console.log(data.error)
