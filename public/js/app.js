@@ -19,7 +19,7 @@
  weatherForm.addEventListener('submit', (e) => {
      messageOne.textContent = 'Loading'
      e.preventDefault()
-     url = 'http://localhost:3000/weather?search=' + searchValue.value
+     url = '/weather?search=' + searchValue.value
      fetch(url).then((Request) => {
          Request.json().then((data) => {
              if (data.error) {
